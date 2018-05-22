@@ -1,0 +1,63 @@
+---
+layout: default
+title: CIV
+---
+
+<div class="top-bar-page">
+  <div class="top-bar-page__menu">
+    <ul>
+      <li><a href="#">Oportunidades</a></li>
+      <li><a href="#">Agenda</a></li>
+      <li><a href="#">Mapa</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="wrapper-columns p-wrapper">
+  
+  <div class="col-item">
+    <div class="header-column">
+      <div class="header-column__text">
+        <p>Entrega</p>
+        <span>para hoje (12/01)</span>
+
+        <div class="header-column__label">
+          9
+        </div>
+      </div>
+    </div><!-- end header column -->
+  </div><!-- end col-item -->
+
+  <div class="col-item">
+
+    <div class="header-column">
+      <div class="header-column__text">
+        <p>Oportunidades</p>
+
+        <div class="header-column__label bg-dark">
+          <input type="text" class="datepicker" value="12/01">
+        </div>
+      </div>
+    </div><!-- end header column -->
+
+    <div class="column-content column-opportunities">
+      {% include opportunities-column.html %}
+      {% include opportunities-column-open.html %}
+    </div>
+
+  </div>
+  <div class="col-item">
+    <div class="header-column">
+      <div class="header-column__text">
+        <p>Retiradas</p>
+        <span>para hoje (12/01)</span>
+
+        <div class="header-column__label bg-dark">
+          <span>
+            6
+          </span>
+        </div>
+      </div>
+    </div><!-- end header column -->
+  </div>
+</div>
