@@ -25,19 +25,22 @@ body
   max-height: 780px
 
 .nav-bar__item--top
-  padding-bottom: 15px
+  padding-bottom: 14px
+  padding-top: 13px
   a
-    img
-      opacity: 1
-      width: 44px
+    color: #808080
+    i
+      font-size: 45px!important
 
 .nav-bar__item
-  // padding: 30px 0
   a
+    color: #808080
     img
-      width: 24px
-      opacity: .6
-
+      max-width: 24px
+      opacity: .6!important
+    i
+      font-size: 24px
+    
 .nav-bar__item--footer
   a
     img
@@ -46,6 +49,11 @@ body
 
 .nav-bar__item--active
   position: relative
+  a 
+    color: #212121
+    img
+      opacity: 1!important
+
   &::after
     position: absolute
     width: 68px
@@ -56,8 +64,4 @@ body
     left: 95px
     transform: rotate(45deg)
     z-index: -1
-  a
-    img
-      opacity: 1!important
-
 
