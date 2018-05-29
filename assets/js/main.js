@@ -11,6 +11,7 @@ $(document).ready(function(){
   });/* end datepicker */
 
   $('select').formSelect();
+  $('input#input_text, textarea#textarea2').characterCounter();
 
 
   $('.input-cart-number').on('keyup change', function(){

@@ -1,0 +1,140 @@
+ 
+.container-new-request
+  display: flex
+  flex-direction: column
+  // height: calc(100% - 70px)
+
+.top-bar-new-request
+  height: 150px
+  background: #F2F2F2;
+
+.body-new-request
+  flex: 1
+  background: #212121
+
+.wrapper-new-request
+  max-width: 1200px
+  margin: -106px auto 0 auto
+  box-shadow: -25px 25px 50px rgba(#000, 0.25)
+
+.new-request__header
+  background: white
+  text-align: center
+  max-width: 1200px
+  height: 106px
+  display: flex
+  align-items: center
+  justify-content: center
+
+  h2
+    font-size: 30px
+    line-height: 1
+    margin: 0
+
+    strong
+      display: block
+      font-size: 51px
+
+.new-request__content
+  background: #f2f2f2;
+  padding: 10px 60px
+
+  h5
+    margin: 0
+    text-align: center
+    font-size: 34px
+    padding: 20px 0
+
+.col-new-request__equipment,
+.col-new-request__local
+  flex: 1
+  position: relative
+  z-index: 2
+
+.col-new-request__center
+  position: relative
+
+.col-new-request__center-img
+  padding-top: 110px
+  position: relative
+  z-index: 1
+
+  img
+    width: 180px
+    height: auto
+
+.col-new-request__center-bg
+  position: absolute
+  width: 100%
+  top: 100px
+
+  img
+    width: 100%
+
+.new-request__after-card
+  @extend .d-flex
+
+  div 
+    flex: 1
+    padding: 15px 0
+    a
+      @extend .d-flex-center-v
+      color: #212121
+      font-size: 16px
+      i 
+        margin-right: 5px
+      span
+        text-decoration: underline
+
+.new-request__form
+  width: 330px
+  margin: 0 auto
+  form
+    label
+      color: #212121!important
+      font-size: 16px
+
+.new-request__credit-cart
+  position: relative
+  text-align: center
+  max-width: 342px
+  margin: 50px auto
+
+  a 
+    position: absolute
+    right: -180px
+    top: 0
+    color: $color-p
+    text-decoration: underline
+
+.new-request__credit-cart_p
+  position: relative
+  left: -80px
+  width: 380px
+  text-align: left
+  @extend .d-flex-center-v
+
+  i 
+    margin-right: 15px
+    color: $color-p
+    font-size: 29px
+
+.new-request__price
+  text-align: center
+  margin-bottom: 50px
+
+  p 
+    font-size: 24px
+    margin: 0
+
+  h6
+    font-size: 24px
+    span
+      color: $color-p
+      font-size: 37px
+
+.new-request__places 
+  padding: 50px
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 15px 40px
