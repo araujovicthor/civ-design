@@ -5,7 +5,8 @@ $(document).ready(function(){
       months: [ 'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro' ],
       monthsShort: [ 'Jan', 'Fev', 'Mar', 'Abr', 'Mar', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez' ],
       weekdays: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
-      weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab']
+      weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+      weekdaysAbbrev: ['D','S','T','Q','Q','S','S']
     },
     format: 'dd/mm'
   });/* end datepicker */
@@ -83,8 +84,6 @@ $(document).ready(function(){
   $('#card-number').change(function(){
     console.log(getCreditCardType($(this).val()));
   })*/
-
-
   
 });/* end documento ready */
 
