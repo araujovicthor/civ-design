@@ -3,6 +3,9 @@
 .p-black
   background: #212121!important
 
+.t-white
+  color: white
+
 .d-flex
   display: flex
 
@@ -23,7 +26,7 @@
 /* box-cards */  
   
 .box-card
-  box-shadow: 0 10px 10px rgba(#000, 0.16);
+  box-shadow: 0 10px 10px rgba(#000, 0.16)
   background-color: white
   border-radius: 10px
   @extend .d-flex
@@ -39,7 +42,7 @@
   background: white
   padding: 0 20px
   border-radius: 10px
-  box-shadow: 0 4px 16px rgba(#000, 0.16);
+  box-shadow: 0 4px 16px rgba(#000, 0.16)
 
 .g-card-row
   flex-direction: row
@@ -124,6 +127,81 @@
     color: $color-p
 
 
+.g-card-pdd
+  box-shadow: 0 10px 10px rgba(#000, 0.16)
+  background-color: white
+  border-radius: 10px
+  @extend .d-flex
+  overflow: hidden
+  margin-bottom: 15px
+  height: 170px
+
+  .g-card__header
+    .box-header-ext
+      .box-card__equipement-cat
+        text-align: center
+
+    .box-card__qty
+      text-align: right
+
+
+.g-card-pdd__body
+  flex: 1
+  @extend .d-flex
+  // margin-right: auto;
+  flex-direction: column
+  // justify-content: space-between
+  padding: 15px 15px 3px 15px
+
+  .g-card__local
+    margin-top: 15px
+    // margin-bottom: 0
+
+.g-card-pdd__sidebar
+  padding: 7px 0
+  flex-grow: 0
+  flex-basis: 200px
+  background: #212121
+  color: white;
+  @extend .d-flex
+  flex-direction: column
+  justify-content: space-around
+
+.g-card-pdd__sidebar-item
+  position: relative
+  left: -10px
+  a
+    color: white
+
+    span
+      position: relative
+      top: 5px
+      margin-right: 5px
+      width: 32px
+      height: 32px
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      box-shadow: 0 3px 6px rgba(#000, 0.16)
+
+      i 
+        font-size: 22px
+
+  &:first-child
+    a 
+      span
+        background: #FEC111
+  &:nth-child(2)
+    a 
+      span
+        background: #F9A01B
+  &:last-child
+    a 
+      span
+        background: #fff
+        color: #212121
+
 
 /* PROGRESS BAR */
 
@@ -132,4 +210,6 @@
 
   .determinate
     background: #212121
+
+
 
