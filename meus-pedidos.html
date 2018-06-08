@@ -20,7 +20,15 @@ permalink: meus-pedidos/
     <div class="header-column">
       <div class="header-column__text">
         <p>Entregas</p>
-        <!-- <span>para hoje <input type="text" class="datepicker datepicker-header" value="12/01"></span> -->
+        <div class="input-field__header-colum">
+          <select>
+            <option value="">Janeiro</option>
+            <option value="">Fevereiro</option>
+            <option value="">Março</option>
+            <option value="">Abril</option>
+            <option value="">Maio</option>
+          </select>
+        </div>
 
         <div class="header-column__label t-white">
           9
@@ -49,6 +57,35 @@ permalink: meus-pedidos/
           <span>12/01</span>
           <div class="progress">
             <div class="determinate" style="width: 70%"></div>
+          </div>
+          <span>22/01</span>
+        </div>
+      </div><!-- g-card -->
+      
+      <div class="g-card g-card-black">
+        <div class="g-card__top">
+          <p>id: 19011211234</p>
+          <!-- <i class="material-icons">keyboard_arrow_down</i> -->
+        </div><!-- g-card__top -->
+        <div class="g-card__header">
+          <h4 class="box-card__title">Martelete <span>20kg</span></h4>
+          <div class="box-card__qty">
+            qtd. <span>1</span>
+          </div>
+        </div><!-- g-card__header -->
+        <div class="g-card__local">
+          <p>
+            <i class="material-icons">place</i>
+            Bairro Neihborhood Rua Street
+          </p>
+        </div><!-- g-card__local -->
+        <div class="g-card__button-mid">
+          <button>Entrega hoje</button>
+        </div>
+        <div class="g-card__progress">
+          <span>12/01</span>
+          <div class="progress">
+            <div class="determinate" style="width: 100%"></div>
           </div>
           <span>22/01</span>
         </div>
@@ -88,6 +125,7 @@ permalink: meus-pedidos/
               Bairro Neihborhood Rua Street
             </p>
           </div><!-- g-card__local -->
+          <p class="g-card-pdd_legend-progress">restam 10 dias</p>
           <div class="g-card__progress">
             <span>12/01</span>
             <div class="progress">
@@ -97,7 +135,7 @@ permalink: meus-pedidos/
           </div>
         </div>
         <div class="g-card-pdd__sidebar">
-          <div class="g-card-pdd__sidebar-item">
+          <div class="g-card-pdd__sidebar-item gc-pdd-sidebar-item-1">
             <a href="#">
               <span>
                 <i class="material-icons">error_outline</i>
@@ -105,7 +143,7 @@ permalink: meus-pedidos/
               Avisar problema
             </a>
           </div>
-          <div class="g-card-pdd__sidebar-item">
+          <div class="g-card-pdd__sidebar-item gc-pdd-sidebar-item-2">
             <a href="#">
               <span>
                 <i class="material-icons">restore</i>
@@ -113,7 +151,7 @@ permalink: meus-pedidos/
               Estender Prazo
             </a>
           </div>
-          <div class="g-card-pdd__sidebar-item">
+          <div class="g-card-pdd__sidebar-item gc-pdd-sidebar-item-3">
             <a href="#">
               <span>
                 <i class="material-icons">close</i>
@@ -124,25 +162,110 @@ permalink: meus-pedidos/
         </div>
 
       </div><!-- g-card -->
+      
+      <div class="g-card-pdd g-card-pdd-yellow">
+        <div class="g-card-pdd__body">
+          <div class="g-card__header">
+            <div class="box-header-ext">
+              <h4 class="box-card__title">Martelete <span>20kg</span></h4>
+              <p class="box-card__equipement-cat">Eletrico</p>
+            </div>
+            <div class="box-card__qty">
+              qtd. <span>1</span>
+            </div>
+          </div><!-- g-card__header -->
+          <div class="g-card__local">
+            <p>
+              <i class="material-icons">place</i>
+              Bairro Neihborhood Rua Street
+            </p>
+          </div><!-- g-card__local -->
+          <p class="g-card-pdd_legend-progress">Pedido Entregue</p>
+          <div class="g-card__progress">
+            <span>12/01</span>
+            <div class="progress">
+              <div class="determinate" style="width: 100%"></div>
+            </div>
+            <span>22/01</span>
+          </div>
+        </div>
+        <div class="g-card-pdd__sidebar">
+          <div class="g-card-pdd__sidebar-item gc-pdd-sidebar-item-1">
+            <a href="#">
+              <span>
+                <i class="material-icons">error_outline</i>
+              </span>
+              Avisar problema
+            </a>
+          </div>
+          <div class="g-card-pdd__sidebar-item">
+            <div class="button">
+              <button class="waves-effect center">
+                Confirmar
+                <span>
+                  <i class="material-icons">check</i>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div><!-- g-card -->
+      
+      <div class="g-card-pdd g-card-pdd-black">
+        <div class="g-card-pdd__body">
+          <div class="g-card__header">
+            <div class="box-header-ext">
+              <h4 class="box-card__title">Martelete <span>20kg</span></h4>
+              <p class="box-card__equipement-cat">Eletrico</p>
+            </div>
+            <div class="box-card__qty">
+              qtd. <span>1</span>
+            </div>
+          </div><!-- g-card__header -->
+          <div class="g-card__local">
+            <p>
+              <i class="material-icons">place</i>
+              Bairro Neihborhood Rua Street
+            </p>
+          </div><!-- g-card__local -->
+          <div class="g-card__progress g-card__progress-black">
+            <p>menos de 24h para a retirada</p>
+            <span>22/01</span>
+          </div>
+        </div>
+        <div class="g-card-pdd__sidebar">
+          <div class="g-card-pdd__sidebar-item gc-pdd-sidebar-item-1">
+            <a href="#">
+              <span>
+                <i class="material-icons">error_outline</i>
+              </span>
+              Avisar problema
+            </a>
+          </div>
+          <div class="g-card-pdd__sidebar-item">
+            <div class="button">
+              <button class="waves-effect center">
+                Estender Prazo
+                <span>
+                  <i class="material-icons">restore</i>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div><!-- g-card -->
 
     </div>
 
   </div>
   <div class="col-item">
 
-    <!-- <div class="header-column">
-      <div class="header-column__text">
-        <p>Retiradas</p>
-        <span>para hoje <input type="text" class="datepicker datepicker-header" value="12/01"></span>
-
-        <div class="header-column__label bg-dark">
-          <span>
-            6
-          </span>
-        </div>
-      </div>
-    </div> -->
-
+    <div class="search-col-layout">
+      <form action="#">
+        <i class="material-icons">search</i>
+        <input type="text" placeholder="Procurar pedidos por equipamento, ID, local...">
+      </form>
+    </div>
     
   </div>
 </div>

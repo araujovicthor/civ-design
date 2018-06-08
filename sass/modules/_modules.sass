@@ -38,11 +38,12 @@
   z-index: 1
   @extend .d-flex
   flex-direction: column
-  height: 170px
+  height: 166px
   background: white
   padding: 0 20px
   border-radius: 10px
   box-shadow: 0 4px 16px rgba(#000, 0.16)
+  margin-bottom: 15px
 
 .g-card-row
   flex-direction: row
@@ -86,6 +87,17 @@
       color: $color-p
       font-size: 22px
 
+.g-card__button-mid
+  text-align: center
+
+  button 
+    border-radius: 18px
+    height: 33px
+    border: 1px solid #212121
+    background: none
+    padding-right: 15px
+    padding-left: 15px
+
 .mb-0
   margin-bottom: 0
   
@@ -117,7 +129,6 @@
 
 .g-card__label-item
   border: 2px solid #212121
-  // height: 36px
   border-radius: 20px
   padding: 5px 20px
   line-height: 1
@@ -127,6 +138,28 @@
     color: $color-p
 
 
+.g-card-black
+  background: #212121
+  color: white
+
+  .determinate
+    background: #F9A01B!important
+
+  .g-card__button-mid
+    text-align: center
+
+  button 
+    border: 1px solid #F9A01B
+    color: #F9A01B
+
+  .g-card__progress
+    span
+      &:first-child
+        background: #F9A01B
+        color: #212121
+
+/* Meus Pedidos */
+
 .g-card-pdd
   box-shadow: 0 10px 10px rgba(#000, 0.16)
   background-color: white
@@ -134,7 +167,7 @@
   @extend .d-flex
   overflow: hidden
   margin-bottom: 15px
-  height: 170px
+  height: 166px
 
   .g-card__header
     .box-header-ext
@@ -143,19 +176,19 @@
 
     .box-card__qty
       text-align: right
+  
+  .g-card-pdd_legend-progress
+    color: #F9A01B
 
 
 .g-card-pdd__body
   flex: 1
   @extend .d-flex
-  // margin-right: auto;
   flex-direction: column
-  // justify-content: space-between
   padding: 15px 15px 3px 15px
 
   .g-card__local
     margin-top: 15px
-    // margin-bottom: 0
 
 .g-card-pdd__sidebar
   padding: 7px 0
@@ -166,10 +199,15 @@
   @extend .d-flex
   flex-direction: column
   justify-content: space-around
+  box-shadow: 0 10px 10px rgba(#111, 0.16)
 
 .g-card-pdd__sidebar-item
   position: relative
   left: -10px
+
+  .button
+    position: relative
+    left: -23px
   a
     color: white
 
@@ -188,19 +226,35 @@
       i 
         font-size: 22px
 
-  &:first-child
-    a 
-      span
-        background: #FEC111
-  &:nth-child(2)
-    a 
-      span
-        background: #F9A01B
-  &:last-child
-    a 
-      span
-        background: #fff
+.gc-pdd-sidebar-item-1
+  a 
+    span
+      background: #FEC111
+.gc-pdd-sidebar-item-2
+  a 
+    span
+      background: #F9A01B
+.gc-pdd-sidebar-item-3
+  a 
+    span
+      background: #fff
+      color: #212121
+
+.g-card-pdd-yellow,
+.g-card-pdd-yellow .g-card-pdd__sidebar
+    background: #F9A01B
+
+    .g-card-pdd_legend-progress
+      color: #212121
+
+    .g-card__local
+      i 
         color: #212121
+
+.g-card-pdd-black,
+.g-card-pdd-black .g-card-pdd__sidebar
+    background: #212121
+    color: white
 
 
 /* PROGRESS BAR */
@@ -211,5 +265,27 @@
   .determinate
     background: #212121
 
+.g-card__progress-black
+  padding-bottom: 5px
+  p 
+    text-align: right
+    flex: 1
+    margin: 0
+    padding-right: 10px
+    color: $color-p
+    font-size: .9rem
+    font-weight: 300
 
+  span 
+    background: $color-p
+    border-radius: 18px
+    font-weight: 500
+    transform: scale(1.1)
+
+.g-card-pdd_legend-progress 
+  font-size: .9rem
+  margin: 0
+  text-align: center
+  position: relative
+  top: 10px
 

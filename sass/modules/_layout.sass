@@ -16,6 +16,8 @@
   grid-template-columns: 1fr minmax(36%, 339px) 1fr
   grid-column-gap: 30px
 
+.col-item
+  position: relative
 
 /* HEADER-COLUMN */
 
@@ -49,7 +51,6 @@
   align-items: center
   justify-content: center
   font-size: 24px
-  // color: white
   line-height: 1.3 
 
   input
@@ -72,6 +73,47 @@
   // border-bottom: 0!important
   height: 25px!important
 
+.input-field__header-colum
+  width: 100px
+  position: relative
+  left: 20px
+  top: 5px
+  input
+    border: 0!important
+    font-size: .9rem!important
+    // max-width: 50px
+    height: 20px!important
+    margin-bottom: 0!important
+  ul li
+    span
+      color: #111
+
+.search-col-layout
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  height: calc(100vh - 72px);
+
+  form
+    position: relative
+    width: 90%
+
+    input 
+      width: calc(100% - 55px)!important
+      border: 0!important
+      background: #FAFAFA!important
+      box-shadow: 0 20px 20px rgba(#000, 0.16)!important
+      padding: 0 10px 0 45px!important
+
+    i 
+      position: absolute
+      left: 10px
+      top: 13px
 
 
 
