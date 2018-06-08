@@ -138,6 +138,146 @@
     color: $color-p
 
 
+/* g-card-open */
+
+.g-card-open__header-dates
+  margin-left: -20px
+  margin-right: -20px
+  background: #F9A01B
+  border-radius: 5px
+  @extend .d-flex
+  justify-content: space-around
+  align-items: flex-end
+  
+  div
+    color: white
+    text-align: center
+    p,
+    h4 
+      margin: 0
+      font-weight: 300
+    h4 
+      font-size: 33px
+    p 
+      font-size: 18px
+
+.g-card-open__header-title
+  position: relative
+  margin-top: 20px
+  margin-left: -20px
+  margin-right: -20px
+  padding: 0 20px
+  height: 86px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background: #ffffff
+  background: -moz-linear-gradient(left, #ffffff 0%, #f2f2f2 100%)
+  background: -webkit-linear-gradient(left, #ffffff 0%,#f2f2f2 100%)
+  background: linear-gradient(to right, #ffffff 0%,#f2f2f2 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=1 )
+
+  h3,
+  p 
+    max-width: 300px
+    margin: 0
+
+  h3
+    font-size: 24px
+
+  img
+    position: absolute
+    right: 5px
+    top: 10px
+    width: 102px
+
+.g-card-open__qty-bg-black
+  font-size: 14px
+  background: #212121
+  color: white
+  text-align: center
+  width: 80px
+  padding: 2px 0
+  border-radius: 18px
+  margin: 15px auto
+  span
+    font-size: 20px
+
+.g-card-open__order-summary
+  background: #212121
+  margin-left: -20px
+  margin-right: -20px
+  color: white
+
+  h3 
+    margin: 0
+    padding: 15px 0
+    font-size: 24px
+    text-align: center
+    svg
+      width: 20px
+
+.g-card-open__order-summary-content
+  @extend .d-flex
+
+  > div 
+    flex: 1
+
+    &:first-child
+      text-align: right
+
+      p,
+      span 
+        font-size: 17px
+        line-height: 1.1
+
+      .gco-osc-line
+        position: relative
+        top: -4px
+        width: 55px
+        display: inline-block
+        height: 1px
+        background: white
+        margin: 0 5px
+
+      p 
+        font-weight: 100
+        color: #808080
+        margin: 0
+        padding-top: 3px
+      span 
+        font-weight: 100
+
+    .g-card-pdd__prices
+      justify-content: center
+
+      p,
+      h5 
+        font-weight: 300
+
+.g-card-open__order-summary-price
+  text-align: center
+  padding: 15px 0
+
+  span 
+    font-size: 16px
+    font-weight: 300
+
+  p 
+    font-size: 26px
+    color: $color-p
+    margin: 0
+    line-height: 1
+
+    small 
+      font-size: 16px
+      color: white
+      margin-right: 15px
+
+
+
+/* state g-card  */
+
 .g-card-black
   background: #212121
   color: white
@@ -198,7 +338,7 @@
   flex-grow: 0
   flex-basis: 200px
   background: #212121
-  color: white;
+  color: white
   @extend .d-flex
   flex-direction: column
   justify-content: space-around
@@ -284,6 +424,9 @@
   z-index: 0
   margin-left: -20px
   margin-right: -20px
+
+  img 
+    width: 120px
 
   &:after
     z-index: -1
@@ -385,16 +528,15 @@
     margin: 0
     font-weight: 300
 
+
 /* sidebar */
 
 .g-card-pdd__sidebar-open
   padding-bottom: 20px
-  .g-card-pdd__sidebar-item
-    // padding: 1px 0
 
 .g-card-pdd__sidebar-open__content
   text-align: center
-  
+
 .g-card-pdd__sidebar-delivery,
 .g-card-pdd__sidebar-removal
   margin: 20px 0
