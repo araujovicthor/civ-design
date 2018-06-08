@@ -10,8 +10,8 @@ title: CIV
 email: email@email.com
 description: > # this means to ignore newlines until "baseurl:"
   CIV
-# baseurl: "" # the subpath of your site, e.g. /blog
-baseurl: "/s/civ"
+baseurl: "" # the subpath of your site, e.g. /blog
+# baseurl: "/s/civ"
 url: "" # the base hostname & protocol for your site
 # twitter_username: layerland
 # github_username:  layerland
