@@ -38,7 +38,7 @@
   z-index: 1
   @extend .d-flex
   flex-direction: column
-  height: 166px
+  min-height: 166px
   background: white
   padding: 0 20px
   border-radius: 10px
@@ -158,6 +158,7 @@
         background: #F9A01B
         color: #212121
 
+
 /* Meus Pedidos */
 
 .g-card-pdd
@@ -167,7 +168,7 @@
   @extend .d-flex
   overflow: hidden
   margin-bottom: 15px
-  height: 166px
+  min-height: 166px
 
   .g-card__header
     .box-header-ext
@@ -182,6 +183,7 @@
 
 
 .g-card-pdd__body
+  position: relative
   flex: 1
   @extend .d-flex
   flex-direction: column
@@ -191,6 +193,7 @@
     margin-top: 15px
 
 .g-card-pdd__sidebar
+  position: relative
   padding: 7px 0
   flex-grow: 0
   flex-basis: 200px
@@ -208,9 +211,9 @@
   .button
     position: relative
     left: -23px
+
   a
     color: white
-
     span
       position: relative
       top: 5px
@@ -240,21 +243,216 @@
       background: #fff
       color: #212121
 
+
+/* CARD-MEUS-PEDIDOS-OPEN */
+
+.g-card-pdd--open__header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  position: relative
+  top: -10px
+
+.card-opp__id
+  position: relative
+  top: -5px
+
+.g-card-pdd__visibility
+  text-align: right
+  a
+    position: relative
+    top: 3px
+
+.g-card-pdd__close
+  cursor: pointer
+  span
+    background: #FAFAFA
+    width: 36px
+    height: 36px
+    display: block
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    box-shadow: 0 5px 10px rgba(#000,0.16)
+
+
+.g-card-pdd--open__image
+  text-align: center
+  padding-left: 20px
+  position: relative
+  z-index: 0
+  margin-left: -20px
+  margin-right: -20px
+
+  &:after
+    z-index: -1
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 60px
+    width: 100%
+    content: ""
+    background: -moz-linear-gradient(left, rgba(242,242,242,1) 0%, rgba(242,242,242,0) 100%)
+    background: -webkit-linear-gradient(left, rgba(242,242,242,1) 0%,rgba(242,242,242,0) 100%)
+    background: linear-gradient(to right, rgba(242,242,242,1) 0%,rgba(242,242,242,0) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#00f2f2f2',GradientType=1 )
+
+.g-card-pdd--open__name
+  text-align: center
+  padding: 10px 0
+
+.g-card-pdd--open__qty
+  display: flex
+  > div
+    flex: 1
+  
+  .box-card__qty
+    padding: 0 9px
+    span
+      font-weight: 500
+    &:first-child
+      text-align: center
+
+.g-card-pdd--open__deadline
+  font-size: 20px
+  padding-left: 20px
+  padding-top: 30px
+  padding-bottom: 20px
+  overflow: hidden
+
+  i 
+    color: $color-p
+
+  div
+    position: relative
+    padding: 5px 0
+    span
+      width: 90px
+      background: white
+      display: block
+      z-index: 1
+      position: relative
+    &:after
+      position: absolute
+      width: 100%
+      height: 1px
+      background: #CFD8DC
+      top: 0
+      bottom: 0
+      margin-top: auto
+      margin-bottom: auto
+      content: ""
+
+.g-card-pdd__prices
+  display: flex
+  justify-content: flex-end
+  padding: 0 0 0 20px
+  text-align: center
+  align-items: center
+
+  p
+    margin: 3px 0
+    font-size: 1.1rem
+  h5
+    margin: 0
+  
+
+.g-card-pdd__prices-date
+  h5
+    position: relative
+    font-size: 1.5rem
+
+    i
+      color: $color-p
+      position: absolute
+      left: -10px
+      top: -2px
+
+.g-card__local-pdd
+  padding-top: 20px
+  margin-bottom: 15px
+
+.g-card-pdd__map
+  max-width: 90%
+  margin-bottom: 15px
+
+  img
+    max-width: 100%
+    height: auto
+
+  p 
+    margin: 0
+    font-weight: 300
+
+/* sidebar */
+
+.g-card-pdd__sidebar-open
+  padding-bottom: 20px
+  .g-card-pdd__sidebar-item
+    // padding: 1px 0
+
+.g-card-pdd__sidebar-open__content
+  text-align: center
+  
+.g-card-pdd__sidebar-delivery,
+.g-card-pdd__sidebar-removal
+  margin: 20px 0
+  span
+    display: block
+  p
+    margin: 0
+    font-size: 33px
+    color: $color-p
+    font-weight: 300
+    line-height: 1
+  
+
+.g-card-pdd__sidebar-removal
+  h6
+    color: #FEC111
+
+.g-card-pdd__sidebar-info
+  padding-top: 30px
+  span
+    display: block
+  p 
+    color: $color-p
+    margin: 0
+    font-size: 24px
+
+
+.g-card-pdd__price
+  position: relative
+  color: #F9A01B
+  font-size: 33px
+  font-weight: 300
+  line-height: 1.1
+  padding-top: 20px
+  margin-bottom: 15px
+
+  span
+    display: block
+    color: white
+    font-size: 20px
+    font-weight: 400
+
+
 .g-card-pdd-yellow,
 .g-card-pdd-yellow .g-card-pdd__sidebar
-    background: #F9A01B
+  background: #F9A01B
 
-    .g-card-pdd_legend-progress
+  .g-card-pdd_legend-progress
+    color: #212121
+
+  .g-card__local
+    i 
       color: #212121
-
-    .g-card__local
-      i 
-        color: #212121
 
 .g-card-pdd-black,
 .g-card-pdd-black .g-card-pdd__sidebar
-    background: #212121
-    color: white
+  background: #212121
+  color: white
 
 
 /* PROGRESS BAR */
