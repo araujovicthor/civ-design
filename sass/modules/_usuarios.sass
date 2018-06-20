@@ -1,0 +1,265 @@
+.header-users-page
+  align-items: center
+  justify-content: space-around
+
+.wrapper-users__content
+  flex: 1 
+
+.header-users__title
+  h2
+    font-size: 37px
+    margin: 0
+    font-weight: 300
+  
+.header-users__form
+  width: 100%
+  max-width: 450px
+
+.form-layout
+  position: relative
+
+  span
+    position: absolute
+    top: 14px
+    left: 10px
+
+  input
+    border: 0!important
+    background: #FAFAFA!important
+    border-radius: 0!important
+    box-shadow: 0 20px 20px rgba(#000,0.16)!important
+    width: calc(100% - 50px)!important
+    height: 48px!important
+    padding: 0 0px 0 50px!important
+
+    &:active
+      border: 0!important
+
+.table-users__header
+  padding-top: 20px
+  font-size: 24px
+
+  .table-users__header-desc,
+  .table-users__header-local
+    flex: 1
+
+.table-users__header-ft
+  width: 85px
+
+.table-users__header-local
+  position: relative
+  left: -7%
+  text-align: center
+
+
+
+// .table-users__body
+
+.table-users__body-item
+  background: white
+  border-radius: 5px
+  box-shadow: 0 3px 10px rgba(#000,0.16)
+  margin: 16px 0
+  height: 84px
+  align-items: center
+
+  p
+    margin: 0
+
+  .table-users__desc,
+  .table-users__local
+    flex: 1
+
+.table-users__ft-content
+  width: 85px
+
+.user-ft__letter,
+.user-ft__image
+  margin: 0 auto
+  width: 50px
+  height: 50px
+  display: block
+  overflow: hidden
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(#000,0.16)
+
+.user-ft__letter
+  background-color: #000
+  display: flex
+  align-items: center
+  justify-content: center
+  color: white
+  font-size: 2rem
+
+.user-ft__image
+  position: relative
+
+  img
+    position: absolute
+    width: 102%
+    height: 102%
+    object-fit: cover
+
+.table-users__user
+  p 
+    line-height: 1.2
+
+.table-users__desc
+  text-align: center
+
+.user-local__item
+  display: inline-block
+  margin: 2px
+  padding: 0 2px
+  box-shadow: 0 3px 6px rgba(#111, 0.16)
+  color: #111
+
+.table-users__edit
+  width: 90px
+  display: flex
+  align-items: center
+
+.table-users__edit-item
+  box-shadow: 0 10px 10px rgba(#000, 0.16)
+  width: 36px
+  height: 36px
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #212121
+  background: white
+
+.table-users__body-item--selected
+  position: relative
+  background: #212121
+  color: white
+  z-index: 0
+
+  &:after
+    position: absolute
+    top: 0
+    right: -10px
+    bottom: 0
+    margin: auto
+    width: 22px
+    height: 22px
+    transform: rotate(45deg)
+    background: #212121
+    content: " "
+    z-index: -1
+
+  .user-local__item
+    color: white
+    box-shadow: 0 3px 6px rgba(#111, 0.5)
+
+  a.user-local__item
+    color: white
+
+
+/* sidebar users */
+
+.sidebar-users
+  width: 400px
+
+.sidebar-users__title-empty
+  text-align: center
+  font-size: 50px
+  line-height: 1
+  padding-top: 150px
+
+  small
+    font-size: 30px
+    font-weight: 300
+    line-height: 10px!important
+
+.sidebar-user--open
+  position: fixed
+  right: 0
+  top: 0
+  height: 100vh
+  background: #212121
+  z-index: 999
+  width: 402px
+  padding: 30px
+  color: white
+  overflow-y: auto
+
+.sidebar-user--open-header
+  align-items: center
+
+.sidebar-user--open-name
+  align-items: center
+  flex: 1
+
+.sidebar-user--open-ft
+  margin-right: 20px
+  span
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #000
+    font-size: 2rem
+
+.sidebar-user--open-name__content
+  font-weight: 300
+  h4 
+    font-size: 22px
+    margin: 0
+  p 
+    margin: 0
+
+
+.sidebar-user--open__info
+  padding: 10px 0
+  p 
+    box-shadow: 0 10px 20px rgba(#000,0.5)
+    margin: 10px 0
+    display: flex
+    align-items: center
+    padding: 20px 10px
+    max-width: 90%
+
+    i 
+      margin-right: 10px
+
+.sidebar-user--open__locais
+  padding: 20px
+  box-shadow: 0 10px 20px rgba(#000,0.5)
+
+  h4 
+    margin: 0
+    font-size: 24px
+
+  h6
+    font-size: 1rem
+    margin-top: 20px
+
+  p 
+    margin: 0
+    display: flex
+    align-items: center
+
+    i 
+      margin-right: 5px
+
+.sidebar-user--open__permissions
+  padding: 30px 0
+  h4 
+    margin: 0
+    flex: 1
+    font-size: 24px
+
+  p 
+    margin: 0 0 5px 0
+
+.sidebar-user--open__limit
+  p 
+    font-size: 20px
+
+    span 
+      margin-left: 20px

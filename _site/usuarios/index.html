@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CIV</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/s/civ/css/main.css?ver=1.1">
+
+  <link rel="canonical" href="/">
+
+  <!-- <link rel="shortcut icon" href="/s/civ/assets/images/civ-logo-black.png" type="image/png"> -->
+</head>
+
+
+  <body>
+    
+    <div class="nav-bar">
+  <ul class="list-menu">
+    <li class="nav-bar__item--top">
+      <a href="#" class="ico-account-sidebar">
+        <i class="material-icons">account_circle</i>
+      </a>
+    </li>
+    <li class="nav-bar__item nav-bar__item--active">
+      <a href="/s/civ/">
+        <i class="material-icons">gavel</i>
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a href="#">
+        <img src="/s/civ/assets/images/icons/ic_content_paste.svg" alt="">
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a href="#">
+        <img src="/s/civ/assets/images/icons/ic_garage.svg" alt="">
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a href="/s/civ/usuarios/">
+        <i class="material-icons">supervisor_account</i>
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a href="#">
+        <i class="material-icons">account_balance_wallet</i>
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a href="#">
+        <i class="material-icons">domain</i>
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a href="#">
+        <i class="material-icons">timeline</i>
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a href="#">
+        <i class="material-icons">chat</i>
+      </a>
+    </li>
+  </ul>
+
+  <ul>
+    <li class="nav-bar__item--footer">
+      <a href="#">
+        <img src="/s/civ/assets/images/icons/ico_exit.svg" alt="">
+      </a>
+    </li>
+  </ul>
+</div>
+
+     <div class="page-content ">
+      <div class="top-bar-page">
+  <div class="logo-civ-top-bar">
+    <img src="/s/civ/assets/images/civ-logo-black.png" alt="">
+    para "cliente_name"
+  </div>
+</div>
+
+
+<div class="wrapper-users p-wrapper d-flex">
+
+  <div class="wrapper-users__content">
+
+    <div class="header-users-page d-flex">
+      <div class="header-users__title">
+        <h2>Usuários</h2>
+      </div>
+      <div class="header-users__form">
+        <form action="#" class="form-layout">
+          <span><i class="material-icons">search</i></span>
+          <input type="text" placeholder="Procurar pessoas por nome, email...">
+        </form>
+      </div>
+      <div class="header-users__button">
+        <div class="button">
+          <button class="waves-effect center">
+            Novo usuário
+            <span>
+              <i class="material-icons">add</i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-users">
+
+      <div class="table-users__header d-flex">
+        <div class="table-users__header-ft"></div>
+        <div class="table-users__header-user">Usuário</div>
+        <div class="table-users__header-desc"></div>
+        <div class="table-users__header-local">Locais</div>
+        <div class="table-users__header-edit"></div>
+      </div><!-- end table-users__header -->
+
+      <div class="table-users__body">
+
+        <div class="table-users__body-item d-flex">
+          <div class="table-users__ft">
+            <div class="table-users__ft-content">
+              <div class="user-ft__letter">
+                A
+              </div>
+            </div>
+          </div>
+          <div class="table-users__user">
+            <p>Fulano de Tal</p>
+            <p>(fulano.de.tal@gmail.com)</p>
+          </div>
+          <div class="table-users__desc">
+            <p>Descrição do usuário</p>
+          </div>
+          <div class="table-users__local">
+            <span class="user-local__item">Obra ficticia do fulano de tal</span>
+            <span class="user-local__item">Obra ficticia do Ciclano</span>
+            <span class="user-local__item">Obra ficticia do Beltrano</span>
+            <span class="user-local__item">Obra ficticia do Trajano</span>
+            <span class="user-local__item">...</span>
+          </div>
+          <div class="table-users__edit">
+            <a href="#" class="table-users__edit-item">
+              <i class="material-icons">edit</i>
+            </a>
+          </div>
+        </div><!-- end table-users__body-item -->
+        
+        <div class="table-users__body-item table-users__body-item--selected d-flex">
+          <div class="table-users__ft">
+            <div class="table-users__ft-content">
+              <div class="user-ft__letter">
+                F
+              </div>
+            </div>
+          </div>
+          <div class="table-users__user">
+            <p>Fulano de Tal</p>
+            <p>(fulano.de.tal@gmail.com)</p>
+          </div>
+          <div class="table-users__desc">
+            <p>Descrição do usuário</p>
+          </div>
+          <div class="table-users__local">
+            <span class="user-local__item">Obra ficticia do fulano de tal</span>
+            <span class="user-local__item">Obra ficticia do Ciclano</span>
+          </div>
+          <div class="table-users__edit">
+            <a href="#" class="table-users__edit-item">
+              <i class="material-icons">edit</i>
+            </a>
+          </div>
+        </div><!-- end table-users__body-item -->
+        
+        <div class="table-users__body-item d-flex">
+          <div class="table-users__ft">
+            <div class="table-users__ft-content">
+              <div class="user-ft__image">
+                <img src="https://randomuser.me/api/portraits/women/91.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="table-users__user">
+            <p>Fulano de Tal</p>
+            <p>(fulano.de.tal@gmail.com)</p>
+          </div>
+          <div class="table-users__desc">
+            <p>Descrição do usuário</p>
+          </div>
+          <div class="table-users__local">
+            <span class="user-local__item">Obra ficticia do fulano de tal</span>
+            <span class="user-local__item">Obra ficticia do Ciclano</span>
+            <span class="user-local__item">Obra ficticia do Beltrano</span>
+            <span class="user-local__item">Obra ficticia do Trajano</span>
+            <span class="user-local__item">...</span>
+          </div>
+          <div class="table-users__edit">
+            <a href="#" class="table-users__edit-item">
+              <i class="material-icons">edit</i>
+            </a>
+          </div>
+        </div><!-- end table-users__body-item -->
+
+      </div><!-- end table-users__body -->
+
+    </div><!-- end table-users -->
+  
+  </div><!-- end wrapper-users__content -->
+
+  <div class="sidebar-users">
+    <h2 class="sidebar-users__title-empty">
+      <small>Para ver mais informações</small>
+      Selecione um usuário
+    </h2>
+  </div>
+
+</div><!-- end wrapper-users -->
+
+<div class="sidebar-user--open">
+
+  <div class="sidebar-user--open-header d-flex">
+    <div class="sidebar-user--open-name d-flex">
+      <div class="sidebar-user--open-ft">
+        <span>A</span>
+      </div>
+      <div class="sidebar-user--open-name__content">
+        <h4>Fulano de Tal</h4>
+        <p>Descrição do usuário</p>
+      </div>
+    </div>
+    <div class="sidebar-user--open-edit">
+      <a href="#" class="table-users__edit-item">
+        <i class="material-icons">edit</i>
+      </a>
+    </div>
+  </div>
+
+  <div class="sidebar-user--open__info">
+    <p>
+      <i class="material-icons">email</i>
+      fulano.de.tal@email.com
+    </p>
+    <p>
+      <i class="material-icons">phone</i>
+      (00) 9 0000-0000
+    </p>
+  </div>
+
+  <div class="sidebar-user--open__locais">
+    <h4>Locais:</h4>
+    <div>
+      <h6>Meu Local 1</h6>
+      <p>
+        <i class="material-icons">place</i>
+        Bairro Neighborhood Rua Street
+      </p>
+      <h6>Meu Local 1</h6>
+      <p>
+        <i class="material-icons">place</i>
+        Bairro Neighborhood Rua Street
+      </p>
+    </div>
+  </div>
+
+  <div class="sidebar-user--open__permissions d-flex">
+    <h4>Permissões:</h4>
+    <div>
+      <p>Administrador</p>
+      <p>Comprador</p>
+      <p>Vendedor</p>
+      <p>Visualizador de compras</p>
+      <p>Visualizador de vendas</p>
+    </div>
+  </div>
+
+  <div class="sidebar-user--open__limit">
+    <p>Limite de compra: <span><small>R$</small> 60.000,00</span></p>
+  </div>
+
+</div>
+     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="/s/civ/assets/js/main.js"></script>
+
+
+  </body>
+
+</html>
