@@ -83,91 +83,83 @@
 </div>
 
      <div class="page-content ">
-      <div style="height: 70px; width: 100%; background: #212121"></div>
+      <div class="top-bar-page">
+  <div class="top-bar-page__menu">
+    <ul>
+      <li><a href="#">Visão Geral</a></li>
+      <li><a href="#">Formas de pagamento</a></li>
+      <li><a href="#">Conta CIV</a></li>
+      <li><a href="#">Faturas</a></li>
+    </ul>
+  </div>
+  <div class="logo-civ-top-bar text-right">
+    <img src="/s/civ/assets/images/civ-logo-black.png" alt="">
+    para "cliente_name"
+  </div>
+</div>
 
-<div class="payment-container">
+<div class="payment-page-form p-wrapper">
 
-  <div class="col-payment payment-options">
+  <div class="payment-form-itens">
+    <a href="#" class="payment-form__add">
+      <i class="material-icons">add</i>
+      <p>Adicionar forma <br>de pagamento</p>
+    </a>
 
-    <h2 class="payment-options__title">
-      <small>Minhas</small>
-      formas de pagamento
-    </h2>
+    <ul class="payment-options__list payment-iten-left">
+      <li class="payment-options__list-item poli-select box-card">
+        <a href="#" class="payment-options__list-link">
+          <div class="payment-options__list-flag">
+            <span>
+              <img src="/s/civ/assets/images/visa.png">
+            </span>
+          </div><!-- end payment-options__list-flag -->
+          <div class="payment-options__list-card">
+            <span>Cartão de Crédito</span>
+            <p>*** XYZW</p>
+          </div><!-- end payment-options__list-card -->
+          <div class="payment-options__list-access">
+            <i class="material-icons">keyboard_arrow_right</i>
+          </div>
+        </a>
+      </li><!-- end payment-options__list-item -->
+      <li class="payment-options__list-item box-card">
+        <a href="#" class="payment-options__list-link">
+          <div class="payment-options__list-flag">
+            <span>
+              <img src="/s/civ/assets/images/mastercard.png">
+            </span>
+          </div><!-- end payment-options__list-flag -->
+          <div class="payment-options__list-card">
+            <span>Cartão de Crédito</span>
+            <p>*** ABCD</p>
+          </div><!-- end payment-options__list-card -->
+          <div class="payment-options__list-access">
+            <i class="material-icons">keyboard_arrow_right</i>
+          </div>
+        </a>
+      </li><!-- end payment-options__list-item -->
+      <li class="payment-options__list-item box-card">
+        <a href="#" class="payment-options__list-link">
+          <div class="payment-options__list-flag">
+            <span>
+              <img src="/s/civ/assets/images/bitcoin.png">
+            </span>
+          </div><!-- end payment-options__list-flag -->
+          <div class="payment-options__list-card">
+            <span>Bitcoin</span>
+            <!-- <p>*** ABCD</p> -->
+          </div><!-- end payment-options__list-card -->
+          <div class="payment-options__list-access">
+            <i class="material-icons">keyboard_arrow_right</i>
+          </div>
+        </a>
+      </li><!-- end payment-options__list-item -->
+    </ul> <!-- end payment-options__list -->
 
-    <div class="payment-options__item">
-      <ul class="payment-options__list">
+  </div><!-- payment-form-itens -->
 
-        <li class="payment-options__list-item box-card">
-          <a href="#" class="payment-options__list-link">
-            <div class="payment-options__list-flag">
-              <span>
-                <img src="/s/civ/assets/images/visa.png">
-              </span>
-            </div><!-- end payment-options__list-flag -->
-            <div class="payment-options__list-card">
-              <span>Cartão de Crédito</span>
-              <p>*** XYZW</p>
-            </div><!-- end payment-options__list-card -->
-            <div class="payment-options__list-access">
-              <i class="material-icons">keyboard_arrow_right</i>
-            </div>
-          </a>
-        </li><!-- end payment-options__list-item -->
-        <li class="payment-options__list-item box-card">
-          <a href="#" class="payment-options__list-link">
-            <div class="payment-options__list-flag">
-              <span>
-                <img src="/s/civ/assets/images/mastercard.png">
-              </span>
-            </div><!-- end payment-options__list-flag -->
-            <div class="payment-options__list-card">
-              <span>Cartão de Crédito</span>
-              <p>*** ABCD</p>
-            </div><!-- end payment-options__list-card -->
-            <div class="payment-options__list-access">
-              <i class="material-icons">keyboard_arrow_right</i>
-            </div>
-          </a>
-        </li><!-- end payment-options__list-item -->
-
-      </ul> <!-- end payment-options__list -->
-    </div>
-
-    <h2 class="payment-options__title">
-      <span>ou</span>
-      <small>Selecione uma</small>
-      forma de pagamento
-    </h2>
-
-    <form action="" class="payment-options__form">
-      <p>
-        <label>
-          <input class="with-gap" name="payment-options__checkbox-item" type="radio"/>
-          <span>Cartão de Crédito</span>
-        </label>
-      </p>
-      <p>
-        <label>
-          <input class="with-gap" name="payment-options__checkbox-item" type="radio"/>
-          <span>Cartão de Débito</span>
-        </label>
-      </p>
-      <p>
-        <label>
-          <input class="with-gap" name="payment-options__checkbox-item" type="radio"/>
-          <span>Boleto <small>(3% de desconto)</small></span>
-        </label>
-      </p>
-    </form>
-
-  </div><!-- payment-options -->
-
-  <div class="col-payment payment-content">
-    
-    <!-- <div class="payment-content-empty">
-      <p>Lembre-se de conferir seu pedido acima</p>
-    </div> -->
-
+  <div class="payment-form-content">
 
     <div class="checkout">
       <div class="credit-card-box">
@@ -261,11 +253,19 @@
           </button>
         </div>
       </form>
+
+      <a href="#" class="payment-form__remove box-card">
+        <span>
+          <i class="material-icons">close</i>
+        </span>
+        Apagar esta forma de pagamento
+      </a>
     </div>
 
-  </div><!-- payment-content -->
+  </div><!-- payment-form-content -->
 
 </div>
+
      </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
