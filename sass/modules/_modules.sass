@@ -37,6 +37,7 @@
     display: block
     font-size: 37px
 
+
 /* box-cards */  
   
 .box-card
@@ -311,6 +312,50 @@
       &:first-child
         background: #F9A01B
         color: #212121
+
+
+/* PEOPLES */
+
+.widget-peoples
+  background: #FAFAFA
+  padding: 12px 18px
+  p 
+    font-size: 24px
+    margin: 0
+
+.p-pic
+  position: relative
+  width: 50px
+  height: 50px
+  display: block
+  overflow: hidden
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(#000,0.16)
+  overflow: hidden
+  margin: 5px
+  display: inline-block
+  cursor: pointer
+
+  span
+    position: absolute
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    color: white
+    font-size: 2rem
+    background: #212121
+
+  img
+    position: absolute
+    width: 102%
+    height: 102%
+    object-fit: cover
+
+
+.widget-peoples__item
+  display: flex
 
 
 /* Meus Pedidos */
@@ -645,30 +690,57 @@
 
 
 
+/* GARAGE | LOCAL */
 
-/* GARAGE */
-
-.list-garage-scroll-h
+.list-local-scroll-h
   padding: 0 20px
   overflow-x: auto
   margin-bottom: 20px
 
-.g-card-garage__container
+.g-card-local__container
   display: flex
   // flex-wrap: wrap
   padding-bottom: 33px
 
-.g-card-garage
+.g-card-local
   position: relative
   min-height: 122px
   max-width: 445px
   min-width: 445px
   margin-right: 15px
 
-.g-card-garage-black
+  .g-card__local
+    margin-bottom: 0
+
+.g-card-local-c
+  justify-content: center
+
+
+.g-card__labels-local
+  @extend .d-flex
+  justify-content: center
+  padding-top: 5px
+  // max-width: 300px
+
+.g-card__label-local__item
+  border: 2px solid #212121
+  border-radius: 20px
+  padding: 5px 20px
+  line-height: 1
+  transform: scale(.9)
+
+  span 
+    font-size: 24px
+    color: $color-p
+
+
+.g-card-local-black
   background: #212121
   color: white
   z-index: 0
+
+  .g-card__label-local__item
+    border-color: white
 
   &:after
     z-index: -1
@@ -684,16 +756,16 @@
     content: " "
     transform: rotate(45deg)
 
-.g-card-garage__id
+.g-card-local__id
   text-align: center
 
   p 
     margin: 5px 0
 
-.g-card-garage__title
+.g-card-local__title
   font-size: 24px
 
-.g-card-garage__edit
+.g-card-local__edit
   position: absolute
   top: 37px
   right: 45px
@@ -735,5 +807,5 @@
     top: -5px
     font-size: 1.1rem
   
-.garage-empty
+.local-empty
   padding-top: 70px
